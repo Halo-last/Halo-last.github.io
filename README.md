@@ -1,4 +1,5 @@
 #This Repo Contains the Html, Css and JS projects.
 
---Canvas Images-- Not used images for the project.
---Progress Bar-- Used in forums and form pages.
+1) --Canvas Images-- Not used images for the project.
+2) --Progress Bar-- Used in forums and form pages.
+3) --Hidden Widget Search-- Simple search bar.

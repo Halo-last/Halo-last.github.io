@@ -1,0 +1,32 @@
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel.active{
+    flex-grow: 5;
+}
+
+.panel h3 {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.4s;
+}
+

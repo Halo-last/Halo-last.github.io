@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.outer-contaienr {
+  width: 80%;
+  height: 80%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 87%, 33%);
+  opacity: 0.5;
+}
+
+.img-1 {
+  background-image: url(./images/image-header-mobile.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 35%;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+}
+
+.para-1 {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.para-1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.para-2 {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 95%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-align: center;
+  margin-top: 5%;
+  line-height: 26px;
+}
+
+.stats span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.stats p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.stat-2,
+.stat-3 {
+  margin-top: 15px;
+}
+
+@media screen and (max-height: 670px) {
+  .para-1 {
+    font-size: 18px;
+  }
+
+  .para-2 {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .stats span {
+    font-size: 12px;
+  }
+
+  .stats p {
+    font-size: 10px;
+  }
+
+  .stats {
+    margin-top: 10%;
+  }
+
+  .stat-1,
+  .stat-2,
+  .stat-3 {
+    margin-top: 0px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-height: 668px) {
+  .stats span {
+    font-size: 15px;
+  }
+
+  .stats p {
+    font-size: 11px;
+  }
+
+  .stats {
+    margin-top: 5%;
+  }
+
+  .stat-1,
+  .stat-2,
+  .stat-3 {
+    margin-top: 8px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-height: 569px) {
+  .stats {
+    margin-top: 1%;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .outer-contaienr {
+    width: 80%;
+    height: 500px;
+    /* min-width: 990px; */
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .img-1 {
+    background-image: url(./images/image-header-desktop.jpg);
+    /* background-size: 100%; */
+    /* background-size: cover; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    margin-top: 4%;
+    height: 60%;
+    width: 100%;
+  }
+
+  .para-1 {
+    font-size: 2.5vw;
+    text-align: left;
+    width: 75%;
+  }
+
+  .para-2 {
+    margin-top: 4%;
+    width: 75%;
+    line-height: 30px;
+    font-size: 1.05vw;
+    text-align: left;
+  }
+
+  .stats {
+    line-height: 28px;
+    display: flex;
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+  }
+
+  .stat-1,
+  .stat-2,
+  .stat-3 {
+    width: 10vw;
+    margin:  0 0 0 0.5vw;
+  }
+
+  .stat-1 {
+    margin-left: 3%;
+  }
+
+  .stats {
+    text-align: left;
+  }
+
+  .stats p {
+    font-size: .85vw;
+  }
+
+  .stats span {
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+  }
+}

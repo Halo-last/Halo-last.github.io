@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+}
+
+.grid {
+  display: grid;
+}
+
+header {
+  background-image: url(./images/mobile/image-header.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+} */
+
+.inner-box {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.inner-box h1 {
+  font-size: 35px;
+  width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  /* height: 200px; */
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2px;
+  height: 28vh;
+  max-height: 210px;
+}
+
+#myLinks a {
+  color: gray;
+  font-family: "Barlow", sans-serif;
+}
+
+#myLinks a:nth-child(4) {
+  background-color: yellow;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: black;
+  font-family: inherit;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:focus {
+  outline: none;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: transparent;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.inner-box img {
+  margin-top: 10%;
+}
+
+.part-1 {
+  background-image: url("./images/mobile/image-transform.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.part-2,
+.part-4 {
+  width: 100%;
+  height: 280px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.part-2 h1,
+.part-4 h1 {
+  margin-top: 4%;
+}
+
+.part-2 p,
+.part-4 p {
+  font-family: "Barlow", sans-serif;
+  color: gray;
+  line-height: 25px;
+  font-size: 16px;
+  width: 80%;
+  margin: 4% auto;
+}
+
+.part-2 a,
+.part-4 a {
+  margin-top: 5%;
+  color: black;
+  text-decoration: none;
+  border-bottom: 6px solid yellow;
+  border-radius: 0px 0px 5px 0px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.part-3 {
+  background-image: url("./images/mobile/image-stand-out.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.part-4 h1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.part-4 a {
+  border-bottom: 6px solid pink;
+}
+
+.part-5 {
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  color: hsl(167, 40%, 24%);
+}
+
+.part-5 h1 {
+  padding-bottom: 6%;
+}
+
+.part-5 p {
+  font-family: "Barlow", sans-serif;
+  width: 95%;
+  line-height: 3.5vh;
+  margin: 0 auto;
+  padding-bottom: 13%;
+}
+
+.part-6 {
+  background-image: url("./images/mobile/image-photography.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  color: hsl(198, 62%, 26%);
+}
+
+.part-6 h1 {
+  padding-bottom: 6%;
+}
+
+.part-6 p {
+  font-family: "Barlow", sans-serif;
+  width: 95%;
+  line-height: 3.5vh;
+  margin: 0 auto;
+  padding-bottom: 12%;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h1 {
+  padding: 12% 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: gray;
+  opacity: 0.6;
+}
+
+.testimonials img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.testimonials p {
+  font-family: "Barlow", sans-serif;
+  width: 85%;
+  margin: 0 auto;
+  padding: 8% 0;
+  line-height: 30px;
+  color: gray;
+}
+
+.testimonials .pos {
+  padding: 2% 0;
+  font-weight: 900;
+  opacity: 0.6;
+}
+
+.no2,
+.no3 {
+  margin-top: 10%;
+}
+
+.boxes {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 55vh;
+}
+
+.img-1 {
+  background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.img-2 {
+  background-image: url("./images/mobile/image-gallery-orange.jpg");
+}
+
+.img-3 {
+  background-image: url("./images/mobile/image-gallery-cone.jpg");
+}
+
+.img-4 {
+  background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+footer {
+  height: 45vh;
+  background-color: #81c8ba;
+  text-align: center;
+}
+
+footer h1 {
+  margin-top: 15%;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  color: #346158;
+}
+
+footer .links {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .links a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  color: hsl(167, 40%, 24%);
+  opacity: 0.6;
+}
+
+
+
+footer .social-links {
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 0 12px;
+}
+
+svg {
+  fill: #2C7566;
+}
+
+svg:hover {
+  fill: #fff;
+}
+.part-2 a:hover {
+  border-color: hsl(51, 98%, 47%);
+}
+
+.part-4 a:hover {
+  border-color: hsl(7, 100%, 64%);
+}
+
+@media screen and (min-width: 769px) {
+  .topnav {
+    /* overflow: hidden; */
+    background-color: transparent;
+    position: relative;
+    height: 8vh;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: inline-flex;
+    position: absolute;
+    top: 5px;
+    /* right: -180px; */
+    left: 70vw;
+    z-index: 5;
+    /* padding: 0 30px; */
+    /* flex-direction: row; */
+    text-align: center;
+    background-color: transparent;
+    align-items: center;
+    height: 65px;
+    width: 45%;
+    /* width: 80%; */
+    /* margin: 0 auto; */
+  }
+
+  #myLinks a {
+    color: #fff;
+    margin: 0 2%;
+    font-family: "Barlow", sans-serif;
+  }
+
+  #myLinks a:nth-child(4) {
+    background-color: #fff;
+    width: 90px;
+    height: 25px;
+    border-radius: 25px;
+    color: black;
+    font-family: inherit;
+    margin: 0 10px;
+    margin-top: 3px;
+  }
+
+  #myLinks a:nth-child(4):hover {
+    background-color: #75cbf6df;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-flexbox;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: none;
+  }
+
+  .topnav a:focus {
+    outline: none;
+  }
+
+  /* Style the active link (or home/logo) */
+  .topnav .active {
+    background-color: transparent;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+  }
+
+  header {
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 95vh;
+  }
+
+  .inner-box {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .inner-box h1 {
+    font-size: 55px;
+  }
+
+  .inner-box img {
+    margin-top: 7%;
+    width: 45px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .part-1 {
+    background-image: url("./images/desktop/image-transform.jpg");
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+  }
+
+  .part-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .part-4 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .part-2 h1,
+  .part-4 h1 {
+    font-size: 50px;
+  }
+
+  .part-4 h1 {
+    width: 95%;
+    margin: 0;
+  }
+
+  .part-2 p,
+  .part-4 p {
+    margin: 4% 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .part-2 a,
+  .part-4 a {
+    width: 120px;
+  }
+
+  .part-3 {
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    width: 100%;
+    height: 100%;
+  }
+
+  .part-5 {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .part-5 h1,
+  .part-6 h1 {
+    font-size: 40px;
+    margin-top: 15%;
+    padding-bottom: 4%;
+  }
+
+  .part-5 p,
+  .part-6 p {
+    font-size: 18px;
+    width: 47%;
+    padding-bottom: 5%;
+  }
+
+  .part-6 {
+    background-image: url("./images/desktop/image-photography.jpg");
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .testimonials {
+    display: flex;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 500px; */
+  }
+
+  .testimonials h1 {
+    position: absolute;
+    left: 38%;
+    top: 100px;
+    letter-spacing: 5px;
+    font-size: 1.5vw;
+    padding: 0;
+  }
+
+  .no1 p {
+    margin-top: 2px;
+  }
+
+  .no1 {
+    margin-top: 16%;
+  }
+
+  .no2 {
+    margin-top: 15%;
+  }
+
+  .no3 {
+    margin-top: 16%;
+  }
+
+  .no1 p,
+  .no2 p,
+  .no3 p {
+    font-size: 20px;
+    width: 70%;
+  }
+  .no3 p {
+    margin-top: 8px;
+  }
+
+  .pos {
+    margin-top: 0;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .img-1 {
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+  }
+
+  .img-2 {
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+  }
+
+  .img-3 {
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+  }
+
+  .img-4 {
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+  }
+
+  footer {
+    height: 38vh;
+  }
+
+  footer h1 {
+    margin-top: 5%;
+    font-size: 38px;
+  }
+
+  footer .links {
+    margin-top: 3%;
+    padding: 0 40%;
+    font-size: 18px;
+    /* opacity: 0.6; */
+  }
+
+  footer .links a {
+    opacity: 0.6;
+  }
+
+
+
+  footer .social-links {
+    margin-top: 4%;
+    font-size: 18px;
+  }
+
+  /* .testimonials h1 {
+    grid-column-start: 1;
+   grid-column-end: 4;
+  } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1380px) {
+  .topnav #myLinks {
+    display: inline-flexbox;
+    left: 55vw;
+  }
+}
+
+footer .links a:hover {
+  opacity: 1;
+  color: #fff;
+}

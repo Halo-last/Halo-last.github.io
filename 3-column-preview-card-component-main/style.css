@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Lexend+Deca&display=swap");
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.outer-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 80%;
+  height: 85vh;
+  color: #fff;
+}
+
+img {
+  margin: 13% 0 0% 0;
+}
+
+.box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.box p {
+  opacity: 0.7;
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+.align {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.part-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.part-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.part-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 5% 0 12% 0;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 985px) {
+  .outer-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 950px;
+    height: 500px;
+  }
+
+  .box h1 {
+    font-size: 2.3rem;
+  }
+
+  .box p {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+
+  .part-1 {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .part-3 {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  button {
+    width: 150px;
+    height: 45px;
+    margin-top: 25%;
+  }
+}
